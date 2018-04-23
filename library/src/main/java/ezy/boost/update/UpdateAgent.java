@@ -362,7 +362,7 @@ class UpdateAgent implements ICheckAgent, IUpdateAgent, IDownloadAgent {
             if (mContext instanceof Activity && !((Activity) mContext).isFinishing()) {
                 ProgressDialog dialog = new ProgressDialog(mContext);
                 dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-                dialog.setMessage("下载中...");
+                dialog.setMessage("Downloading...");
                 dialog.setIndeterminate(false);
                 dialog.setCancelable(false);
                 dialog.show();
@@ -399,7 +399,7 @@ class UpdateAgent implements ICheckAgent, IUpdateAgent, IDownloadAgent {
         @Override
         public void onStart() {
             if (mBuilder == null) {
-                String title = "下载中 - " + mContext.getString(mContext.getApplicationInfo().labelRes);
+                String title = "Downloading - " + mContext.getString(mContext.getApplicationInfo().labelRes);
                 mBuilder = new NotificationCompat.Builder(mContext);
                 mBuilder.setOngoing(true)
                         .setAutoCancel(false)
