@@ -1,6 +1,7 @@
 # update [![](https://jitpack.io/v/czy1121/update.svg)](https://jitpack.io/#czy1121/update)
 
 清晰灵活简单易用的应用更新库
+test
 
 
 - 支持断点续传
